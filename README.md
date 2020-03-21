@@ -1,7 +1,11 @@
 # covid19goid_bot
 
-## Penginstalan
-pip install python-telegram
+covid19goid_bot adalah bot telegram untuk informasi mengenai pandemic COVID-19 di Indonesia. Data pasien didapat dari https://www.covid19.go.id/. covid19goid_bot menggunakan Python3.7.7. covid19goid_bot dibuat selama 2 jam karena iseng, kode programnya banyak yang spagethi, tapi yang penting bisa jalan.
 
-## Mulai bot
-python covid19.py
+## Penginstalan (Windows 10)
+
+py -m pip install python-telegram-bot
+py -m pip install beautifulsoup4
+
+## Mulai bot (Windows 10)
+py bot.py
