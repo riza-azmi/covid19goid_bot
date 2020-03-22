@@ -8,8 +8,7 @@ Bot dapat diakses melalui telegram: https://t.me/covid19goid_bot
 ## Penginstalan (Windows 10)
 Download: https://www.python.org/downloads/windows/
 ```
-py -m pip install python-telegram-bot
-py -m pip install beautifulsoup4
+py -m pip install -r requirements.txt
 ```
 
 ## Mulai bot (Windows 10)
