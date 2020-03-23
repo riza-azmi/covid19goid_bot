@@ -401,7 +401,7 @@ def error(update, context):
 
 
 def main():
-    updater = Updater("1012224527:AAEzqU9wOBC66cZYLR05Gy8IIp-3-xnE1YI", use_context=True)
+    updater = Updater("MASUKKAN:TOKENDISINICUY", use_context=True)
     dp = updater.dispatcher
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
