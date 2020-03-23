@@ -69,9 +69,9 @@ def regular_choice(update, context):
             from bs4 import BeautifulSoup
             soup = BeautifulSoup(html, 'html.parser')
             mes = ""
-            for s in soup.find('div', class_='fusion-layout-column fusion_builder_column fusion_builder_column_1_3 fusion-builder-column-7 fusion-one-third fusion-column-first 1_3').find_all('span'):
+            for s in soup.find('div', class_='fusion-layout-column fusion_builder_column fusion_builder_column_1_3 fusion-builder-column-7 fusion-one-third fusion-column-first 1_3').find_all('span')[1:-1]:
                 mes += s.text + '\n'
-            mes += "Untuk info peta sebaran COVID-19 bisa klik link berikut: https://www.covid19.go.id/situasi-virus-corona/ \n\n" + "Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik *MENU* (/start) untuk kembali ke menu utama, atau ketik *SELESAI* bila mau mengakhiri perbincangan kita hari ini. "
+            mes += "\nUntuk *info peta sebaran COVID-19* bisa klik link berikut: https://www.covid19.go.id/situasi-virus-corona/ \n\n" + "Ada lagi yang ingin kamu tanyakan? Kalau ada, ketik *MENU* (/start) untuk kembali ke menu utama, atau ketik *SELESAI* bila mau mengakhiri perbincangan kita hari ini. "
             update.message.reply_text(mes,reply_markup=markup2,parse_mode=telegram.ParseMode.MARKDOWN)
         except:
             update.message.reply_text(
