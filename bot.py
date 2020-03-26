@@ -261,7 +261,7 @@ def received_information(update, context):
             "8. RSUD Dr R Sosodoro Djatikoesoemo, Bojonegoro. Telepon: (0353) 3412133\n\n"
             "Pemprov Jatim melalui Dinkes Jatim membuat layanan *Call Center Cangkrukan Kesehatan (Cacak Jatim)* untuk layanan kesehatan termasuk untuk konsultasi terkait Corona Virus Disease (COVID-19).\n"
             "\n"
-            "Peta pesebaran COVID-19 di Kota Surabaya, Jawa Timur dapat diakses melalui situs https://lawancovid-19.surabaya.go.id/. \n\n*Layanan call center dibuka di dua saluran* yaitu di nomor 031-8430313 untuk layanan di hari aktif dan jam kerja, dan di nomor 081334367800 untuk di luar jam kerja yang juga aktif di hari libur.",parse_mode=telegram.ParseMode.MARKDOWN)
+            "*Layanan call center dibuka di dua saluran* yaitu di nomor 031-8430313 untuk layanan di hari aktif dan jam kerja, dan di nomor 081334367800 untuk di luar jam kerja yang juga aktif di hari libur.\n\nPeta pesebaran COVID-19 di Kota Surabaya, Jawa Timur dapat diakses melalui situs https://lawancovid-19.surabaya.go.id/. ",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'KALIMANTAN UTARA':
         update.message.reply_text(
             "*KALIMANTAN UTARA*\n\n"
