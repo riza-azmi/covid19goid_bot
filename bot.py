@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # This program is dedicated to the public domain under the CC0 license.
-# Riza Azmi (Puslitbang SDP3I)
+# Riza Azmi (Puslitbang SDP3I, Kementerian Komunikasi dan Informatika)
 
 import logging
 import telegram
@@ -226,7 +226,7 @@ def received_information(update, context):
             "2. RSPAD Gatot Soebroto, Jakarta Pusat. Telepon: (021) 3440693\n"
             "3. RSUP Persahabatan, Jakarta Timur. Telepon: (021) 4891708\n"
             "\n"
-            "Peta pesebaran COVID-19 di Kalimantan Selatan dapat diakses melalui situs https://corona.jakarta.go.id/id. \n\nNomor darurat #JakartaTanggapCorona Dinas Kesehatan Provinsi DKI Jakarta di 112 atau *Posko Dinas Kesehatan di nomor WA* https://wa.me/6281388376955.⁣",parse_mode=telegram.ParseMode.MARKDOWN)
+            "Peta pesebaran COVID-19 di Jakarta dapat diakses melalui situs https://corona.jakarta.go.id/id. \n\nNomor darurat #JakartaTanggapCorona Dinas Kesehatan Provinsi DKI Jakarta di 112 atau *Posko Dinas Kesehatan di nomor WA* https://wa.me/6281388376955.⁣",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'JAWA TENGAH':
         update.message.reply_text(
             "*JAWA TENGAH*\n\n"
@@ -261,7 +261,7 @@ def received_information(update, context):
             "8. RSUD Dr R Sosodoro Djatikoesoemo, Bojonegoro. Telepon: (0353) 3412133\n\n"
             "Pemprov Jatim melalui Dinkes Jatim membuat layanan *Call Center Cangkrukan Kesehatan (Cacak Jatim)* untuk layanan kesehatan termasuk untuk konsultasi terkait Corona Virus Disease (COVID-19).\n"
             "\n"
-            "*Layanan call center dibuka di dua saluran* yaitu di nomor 031-8430313 untuk layanan di hari aktif dan jam kerja, dan di nomor 081334367800 untuk di luar jam kerja yang juga aktif di hari libur.",parse_mode=telegram.ParseMode.MARKDOWN)
+            "Peta pesebaran COVID-19 di Kota Surabaya, Jawa Timur dapat diakses melalui situs https://lawancovid-19.surabaya.go.id/. \n\n*Layanan call center dibuka di dua saluran* yaitu di nomor 031-8430313 untuk layanan di hari aktif dan jam kerja, dan di nomor 081334367800 untuk di luar jam kerja yang juga aktif di hari libur.",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'KALIMANTAN UTARA':
         update.message.reply_text(
             "*KALIMANTAN UTARA*\n\n"
@@ -404,7 +404,7 @@ def error(update, context):
 
 
 def main():
-    updater = Updater("TOKEN:DISINIYA", use_context=True)
+    updater = Updater("1012224527:AAEzqU9wOBC66cZYLR05Gy8IIp-3-xnE1YI", use_context=True)
     dp = updater.dispatcher
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
