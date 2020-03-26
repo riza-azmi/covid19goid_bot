@@ -216,8 +216,8 @@ def received_information(update, context):
             "4. RSUD Kabupaten Indramayu Telepon: (0234) 272655\n"
             "5. RSUD Dr Slamet Garut Telepon: (0262) 232720, (0262) 237791\n"
             "6. RSD Gunung Jati Kota Cirebon Telepon: (0231) 206330, (0231)202441\n"
-            "7. RSUD Subang Telepon: (0260) 417442, (0260) 411421\n"
-            "\n"
+            "7. RSUD Subang Telepon: (0260) 417442, (0260) 411421\n\n"
+            "Peta pesebaran COVID-19 di Jawa Barat dapat dilihat melalui situs https://pikobar.jabarprov.go.id/\n\n"
             "Dinas Kesehatan Jawa Barat membuka sambungan telepon di nomor 08112093306 bagi masyarakat yang membutuhkan informasi mengenai virus Corona.",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'JAKARTA':
         update.message.reply_text(
@@ -226,7 +226,7 @@ def received_information(update, context):
             "2. RSPAD Gatot Soebroto, Jakarta Pusat. Telepon: (021) 3440693\n"
             "3. RSUP Persahabatan, Jakarta Timur. Telepon: (021) 4891708\n"
             "\n"
-            "Nomor darurat #JakartaTanggapCorona Dinas Kesehatan Provinsi DKI Jakarta di 112 atau *Posko Dinas Kesehatan di nomor WA* https://wa.me/6281388376955.⁣",parse_mode=telegram.ParseMode.MARKDOWN)
+            "Peta pesebaran COVID-19 di Kalimantan Selatan dapat diakses melalui situs https://corona.jakarta.go.id/id. \n\nNomor darurat #JakartaTanggapCorona Dinas Kesehatan Provinsi DKI Jakarta di 112 atau *Posko Dinas Kesehatan di nomor WA* https://wa.me/6281388376955.⁣",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'JAWA TENGAH':
         update.message.reply_text(
             "*JAWA TENGAH*\n\n"
@@ -275,8 +275,11 @@ def received_information(update, context):
     elif x == 'KALIMANTAN SELATAN':
         update.message.reply_text(
             "1. RSUD Ulin Banjarmasin. Telepon: (0511) 3252180\n"
-            "2. RSUD H Boejasin Pelaihari, Angsau, Kabupaten Tanah Laut. Telepon: (0512) 21083, IGD (0512) 22009\n\n"
-            "Dinkes Kalsel: 08217718672 & 082157718673\n"
+            "2. RSUD H Boejasin Pelaihari, Angsau, Kabupaten Tanah Laut. Telepon: (0512) 21083, IGD (0512) 22009\n"
+            "3. Rumah Sakit Idaman (Cadangan), Kota Banjarbaru\n"
+            "4. Rumah Sakit dr. H. M. Ansari Saleh (Cadangan), Kota Banjarmasin\n"
+            "5. Rumah Sakit Hasan Basri (Cadangan), Kabupaten Hulu Sungai\n\n"
+            "Peta pesebaran COVID-19 di Kalimantan Selatan dapat diakses melalui situs http://corona.kalselprov.go.id/ \n\n*Call center dan hotline penanganan COVID-19*: \n\nDinkes Kalsel: 08217718672 & 082157718673\n"
             "BPBD Kalsel: 1500-474\nBanjarmasin: 08118835566\nBanjar: 08126112119\nKota Baru: 082256000065 & 082256000099\nTapin:0811519772\nTanah Laut: 082252224118, 08115184, 081348379787\nTanah Bumbu: 081349680690 & 081382411780\nHST: 082159004569\nBalangan: 081250005119\nHSU: 0813 4938 0885\nHSS: 0811514686\nTabalong:08125005372",parse_mode=telegram.ParseMode.MARKDOWN)
     elif x == 'KALIMANTAN TIMUR':
         update.message.reply_text(
@@ -401,7 +404,7 @@ def error(update, context):
 
 
 def main():
-    updater = Updater("MASUKKAN:TOKENDISINICUY", use_context=True)
+    updater = Updater("1012224527:AAEzqU9wOBC66cZYLR05Gy8IIp-3-xnE1YI", use_context=True)
     dp = updater.dispatcher
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
