@@ -17,7 +17,8 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="covid19",
   passwd="Covid19!",
-  database="covid19"
+  database="covid19",
+  auth_plugin='mysql_native_password'
 )
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
