@@ -126,7 +126,7 @@ def regular_choice(update, context):
     elif x == 'SELESAI':
         update.message.reply_text(
             "Terima kasih sudah mampir ke pusat informasi Covid-19. Jaga kesehatan selalu. Jangan lupa rajin cuci tangan dengan sabun, makan-makanan yang sehat dan teratur,  serta menggunakan masker bila kamu sedang merasa tidak enak badan.   \n\n"
-            "Jangan lupa juga untuk jaga jarak aman lebih dari 1 meter. Ayo kita cegah penyebaran Covid-19 lebih luas.   \n\n"
+            "Jangan lupa juga untuk jaga jarak aman lebih dari 1 meter. Ayo kita cegah penyebaran Covid-19 lebih luas.\n\nKamu juga dapat memasang aplikasi https://pedulilindungi.id/ di perangkat ponselmu.   \n\n"
             "Untuk informasi lebih lanjut dapat kunjungi www.covid19.go.id. \n\nketik *MENU* (/start) jika ingin mengulangi perbincangan kembali.",parse_mode=telegram.ParseMode.MARKDOWN)
     else:
         update.message.reply_text(
@@ -404,7 +404,7 @@ def error(update, context):
 
 
 def main():
-    updater = Updater("TOKEN", use_context=True)
+    updater = Updater("1012224527:AAEzqU9wOBC66cZYLR05Gy8IIp-3-xnE1YI", use_context=True)
     dp = updater.dispatcher
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
